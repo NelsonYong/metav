@@ -14,7 +14,6 @@ let ncp = require('ncp')
 ncp = promisify(ncp)
 const path = require('path')
 const fs = require('fs')
-const fse = require('fs-extra')
 const inquirer = require('inquirer')
 
 downloadGit = promisify(downloadGit) // 将项目下载到当前用户的临时文件夹下
@@ -23,7 +22,6 @@ const downDir = async (repo, tag) => {
 	if (tag) {
 		project += `#${tag}`
 	}
-	//     c:/users/lee/.myTemplate
 	let dest = `${downloadDirectory}/${repo}`
 	//把项目下载当对应的目录中
 	console.log(dest, '项目所在目录～～')

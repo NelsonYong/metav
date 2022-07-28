@@ -2,11 +2,9 @@ node_modules
 .DS_Store
 dist
 .cache
-.temp
 
 package-lock.json
 yarn.lock
-pnpm-lock.yaml
 
 .local
 # local env files
@@ -28,3 +26,9 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# auto-import files
+/src/auto-imports.d.ts
+/src/components.d.ts
+
+stats.html
